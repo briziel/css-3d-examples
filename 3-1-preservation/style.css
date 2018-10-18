@@ -1,0 +1,28 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: 0;
+  margin: 0;
+}
+
+.ground {
+  position: relative;
+  height: 400px;
+  width: 400px;
+  background-color: lightcoral;
+  transform-origin: 40px;
+  transform: rotateX(60deg) rotateY(0deg) rotateZ(-45deg) translateZ(-200px);
+  /* transform-style: preserve-3d; */
+}
+
+.wall {
+  position: absolute;
+  height: 400px;
+  width: 400px;
+  background-color: darkseagreen;
+  transform-origin: 40px;
+  transform: rotate3d(1,0,0, -80deg);
+  transform-origin: bottom;
+}

@@ -1,0 +1,30 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: 0;
+  margin: 0;
+  perspective: 400px;
+}
+
+body > .frame {
+  transform: rotate3d(1, 0, 0, -13deg) translateY(-150px);
+}
+
+.frame {
+  position: relative;
+  transform-origin: 40px;
+  transform: translateX(-40px) rotate3d(0, 1, 0, 18deg);
+  transform-style: preserve-3d;
+}
+
+.obj {
+  position: absolute;
+  height: 200px;
+  width: 40px;
+  background-color: lightcoral;
+  clip-path: polygon(33% 0%, 66% 0%, 100% 100%, 0% 100%);
+  transform: rotateX(-25deg);
+  transform-origin: bottom;
+}

@@ -1,0 +1,19 @@
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  perspective: 50000px;
+}
+
+div {
+  height: 200px;
+  width: 200px;
+  background-color: lightcoral;
+  transform: rotate3d(1, 0, 0, 45deg);
+}
